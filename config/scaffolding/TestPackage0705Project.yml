@@ -7,3 +7,24 @@ packages:
   gitUrl: https://github.com/ArtiKhareIBM
   gitUsername: ArtiKhareIBM
   gitBranch: main
+- name: LowerFSPackage
+  version: "1.0"
+  gitServerName: srcGithubCtrl_Arti
+  gitUrl: https://github.com/ArtiKhareIBM
+  gitUsername: ArtiKhareIBM
+  gitBranch: main
+services:
+- serviceName: project.testpackage0705.integrations:testpackage
+  packages:
+  - name: TestPackage0705Project
+    version: "1.0"
+  - name: LowerFSPackage
+    version: "1.0"
+- serviceName: LowerFSPackage:lowerFS
+  packages:
+  - name: LowerFSPackage
+    version: "1.0"
+- serviceName: pub.string:toLower
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2053
