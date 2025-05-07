@@ -8,6 +8,14 @@ packages:
   gitUsername: ArtiKhareIBM
   gitBranch: main
 services:
+- serviceName: project.testpackage0705.integrations:ds
+  packages:
+  - name: TestPackage0705Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2053
 - serviceName: project.testpackage0705.integrations:testpackage
   packages:
   - name: TestPackage0705Project
